@@ -142,3 +142,7 @@ git commit
 git add tictactoe.cpp
 git commit
 git push origin main
+git clone https://github.com/466509/tictactoe
+git add .
+git commit -m "commit"
+git push origin main
