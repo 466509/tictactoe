@@ -6,11 +6,17 @@ void printArray(char arr[][3]);
 //void printPointer(int** arrPtr);
 
 int main() {
-  char arr[3][3] = {'x'};
+  char arr[3][3] = {'X'};
   char (*ptr)[3] = arr;
   char play = 'y';
   while (play == 'y') {
-    printArray(arr);
+    for (int i=0; i<3; i++) {
+      for (int j=0; j<3; j++) {
+	arr[i][j]=' ';
+	cout << arr[i][j];
+      }
+      cout << endl;
+    }
     int turn = 0;
     char symb;
     char row;
@@ -21,7 +27,7 @@ int main() {
     }
     cout << "Which row? (a, b, or c)" << " ";
     cin >> row;
-    cout << turn << endl;
+    arr[row][1]={symb};
     turn++;
   }
 

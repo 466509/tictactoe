@@ -146,3 +146,47 @@ git clone https://github.com/466509/tictactoe
 git add .
 git commit -m "commit"
 git push origin main
+ls
+cd tictactoe.coo
+cd tictactoe.cpp
+g++ -o tictactoe tictactoe.cpp
+cd tictactoe
+g++ -o tictactoe tictactoe.cpp
+./tictactoe.exe
+cd /
+git init
+git remote add origin https://github.com/466509/tictactoe.git
+git branch -M main
+git commit
+git branch -M main
+git remote add origin https://github.com/466509/tictactoe.git
+git branch -M main
+git push -u origin main
+g++ -o tictactoe tictactoe.cpp
+./tictactoe.exe
+git remote add origin https://github.com/466509/tictactoe.git
+git branch -M main
+git push -u origin main
+g++ -o tictactoe tictactoe.cpp
+./tictactoe.exe
+g++ -o tictactoe tictactoe.cpp
+./tictactoe.exe
+./tictactoe.exe
+g++ -o tictactoe tictactoe.cpp
+./tictactoe.exe
+g++ -o tictactoe tictactoe.cpp
+./tictactoe.exe
+g++ -o tictactoe tictactoe.cpp
+./tictactoe.exe
+g++ -o tictactoe tictactoe.cpp
+g++ -o tictactoe tictactoe.cpp
+g++ -o tictactoe tictactoe.cpp
+./tictactoe.exe
+g++ -o tictactoe tictactoe.cpp
+g++ -o tictactoe tictactoe.cpp
+./tictactoe.exe
+g++ -o tictactoe tictactoe.cpp
+./tictactoe.exe
+g++ -o tictactoe tictactoe.cpp
+./tictactoe.exe
+git add
