@@ -27,7 +27,7 @@ int main() {
     }
     cout << "Which row? (a, b, or c)" << " ";
     cin >> row;
-    arr[row][1]={symb};
+    arr[1][1]={symb};
     turn++;
   }
 
