@@ -5,12 +5,15 @@ using namespace std;
 void printArray(char arr[3][3]);
 void makeMove(int& x, int& y);
 bool isLegal(char arr[3][3], int x, int y);
+bool checkWin(char arr[3][3], int& player1wins, int& player2wins);
 
 int main() {
   char arr[3][3] = {{' ',' ',' '},{' ',' ',' '},{' ',' ',' '}};
   char (*ptr)[3] = arr;
   char play = 'y';
   int turn = 0;
+  int player1wins = 0;
+  int player2wins = 0;
   printArray(arr);
 
   while (play == 'y') {
@@ -36,6 +39,9 @@ int main() {
       }
     }
     turn++;
+    if (checkWin(arr, player1wins, player2wins)) {
+      play = 'n';
+    }
   }
   return 0;
 }
@@ -63,4 +69,19 @@ bool isLegal(char arr[3][3], int x, int y) {
   else {
     return false;
   }
+}
+
+bool checkWin(char arr[3][3], int& player1wins, int& player2wins) {
+  cout<<"checking win" << endl;
+  if (arr[1][1]!=' ' && arr[0][0]==arr[1][1]==arr[2][2] || arr[2][0]==arr[1][1]==arr[0][2]) {
+      if (arr[1][1]=='X') {
+	cout << "Player 1 wins!" << endl;
+	player1wins++;
+      } else {
+	cout << "Player 2 wins!" << endl;
+	player2wins++;
+      }
+      return true;
+  }
+  return false;
 }
