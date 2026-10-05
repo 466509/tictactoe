@@ -1,3 +1,6 @@
+// Jinyao Zhu 10/2/2026
+// This program is a two player tic tac toe game. It tracks the number of wins for each player. Input row and col letters and numbers to place your move
+
 #include <iostream>
 using namespace std;
 
